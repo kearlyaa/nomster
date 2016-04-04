@@ -14,7 +14,6 @@ body{
   background: url('/assets/wild_oliva.png');
   border-radius: 0;
   box-shadow: 0px 1px 3px #2a2a2a;
-
 }
 
 .booyah-box {
@@ -32,4 +31,10 @@ body{
 .place_address{
   display: inline-block;
   margin-bottom: 20px;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #E3E85A;
+  font-family: "grandhotel", Helvetica, sans-serif;
+  font-size:26px;
 }
