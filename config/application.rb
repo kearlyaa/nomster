@@ -25,6 +25,7 @@ module Nomster
 
     # Precompile additional assets
     config.assets.precompile += %w( .svg .eot .woff .ttf )
-    
+
+    config.serve_static_assets = true
   end
 end
