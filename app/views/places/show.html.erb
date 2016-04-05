@@ -23,11 +23,16 @@
       }
 
     </script>
+    <% 
+      if Rails.env == 'development'
+        ENV['GOOGLE_MAPS_API_KEY'] = ""
+      end
+    %>
     <script async defer src="https://maps.googleapis.com/maps/api/js?signed_in=true&callback=initMap&key=<%= ENV['GOOGLE_MAPS_API_KEY'] %>"></script>
 
-     <div id="map"></div>
+    <div id="map"></div>
 
-   <% end %>
+  <% end %>
 
   <div class="pull-right">
     <% if current_user && current_user == @place.user %>
