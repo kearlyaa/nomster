@@ -1,3 +1,9 @@
 <p>Well hello!</p>
 
-<p>A comment has been added to your <b>place</b> on Nomster</p>
+<p>
+  A comment has been added to your <%= link_to @place.name, place_url(@place) %> on Nomster
+</p>
+
+<p>
+  Comment: <%= @comment.message %>
+</p>
