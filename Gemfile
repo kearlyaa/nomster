@@ -45,6 +45,7 @@ gem "figaro", ">= 1.0.0"
 
 gem "carrierwave"
 
+gem "fog", "~> 1.3.1" # for aws s3 hosting of carrierwave images
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
